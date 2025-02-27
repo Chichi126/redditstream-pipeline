@@ -1,0 +1,16 @@
+# Reddit API
+praw
+
+# Kafka
+# kafka-python==2.0.2
+# Kafka (replace kafka-python with confluent-kafka)
+confluent-kafka
+
+# MongoDB
+pymongo
+
+# Spark
+pyspark
+
+# Utilities
+python-dotenv
