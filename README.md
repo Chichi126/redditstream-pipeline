@@ -19,21 +19,14 @@ This project implements a robust data pipeline that:
 
 ## Project Structure
 ```
-reddit-data-pipeline/
+redditstream-pipeline/
 │
-├── reddit-producer/
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   └── producer.py
-│
-├── spark-consumer/
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   └── consumer.py
-│
+├── Dockerfile
+├── requirements.txt
 ├── docker-compose.yml
+├── producer.py
+├── consumer.py
 └── README.md
-```
 
 ## Setup and Configuration
 
