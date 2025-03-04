@@ -21,7 +21,7 @@ This project implements a robust data pipeline that:
 - Reddit API Credentials
 
 ## Project Structure
-
+```
 redditstream-pipeline/
 │
 
@@ -37,6 +37,7 @@ redditstream-pipeline/
 
 └── README.md
 
+```
 ## Setup and Configuration
 
 ### 1. Reddit API Credentials
@@ -78,17 +79,6 @@ This project implements a data pipeline that:
 - Python 3.8+
 - Reddit API Credentials
 
-## Project Structure
-```
-reddit-data-pipeline/
-│
-├── Dockerfile
-├── requirements.txt
-├── docker-compose.yml
-├── producer.py
-├── consumer.py
-└── README.md
-```
 
 ## Setup and Configuration
 
