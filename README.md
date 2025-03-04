@@ -24,11 +24,17 @@ This project implements a robust data pipeline that:
 
 redditstream-pipeline/
 │
+
 ├── Dockerfile
+
 ├── requirements.txt
+
 ├── docker-compose.yml
+
 ├── producer.py
+
 ├── consumer.py
+
 └── README.md
 
 ## Setup and Configuration
