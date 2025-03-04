@@ -221,4 +221,58 @@ docker-compose logs -f spark-consumer
 ## Monitoring and Debugging
 - Check Kafka topics: `docker-compose exec kafka kafka-topics.sh --list --zookeeper zookeeper:2181`
 - View MongoDB data: `docker-compose exec mongodb mongo`
+- 
+
+
+#### Step 4: Verifying MongoDB Data
+
+*Accessing MongoDB Locally:*
+
+MongoDB was accessed locally through the Docker container for verification.
+
+The mongo CLI or Compass UI was used to inspect the created database and collection.
+
+Mongo CLI bash 
+```
+
+  mongo "< your URI >" (to connect to the cluster)
+    
+  show dbs (to display the databases present in the cluster)
+    
+  use dbs  (TO enter into that particular database)
+    
+  show collections (to display all the collections <tables> inside the database)
+    
+  db.dataengineering.find().pretty()
+```
+
+![](https://github.com/Chichi126/reddit_kafka_spark/blob/f2b5d52abf6f2a41c43604b03b3583831340895e/Screenshot%202024-12-12%20at%206.06.14%20PM.png)
+
+
+Data replication can also be confirmed using MongoDB Atlas.
+
+By using Compass connected to the Atlas cluster using the URI provided in the application configuration.
+
+![](https://github.com/Chichi126/reddit_kafka_spark/blob/f2b5d52abf6f2a41c43604b03b3583831340895e/Screenshot%202024-12-16%20at%2010.35.34%20AM.png)
+
+
+Verification in VSCode using the MongoDB Extension:
+
+The MongoDB VSCode extension can connect to both local and cloud MongoDB instances.
+
+Install the Vscode extension then click on connect
+
+click on the view enter your uri including your password and username and enter
+
+*Queries were executed to verify the inserted data.*
+
+Basic queries were run using the MongoDB shell or VSCode extension to ensure data integrity.
+
+Query Example:
+
+```
+    bash
+db.dataengineering.find().limit(5)
+
+
 
